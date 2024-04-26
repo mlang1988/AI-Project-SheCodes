@@ -14,19 +14,22 @@
         <h1>🎶 AI Music Suggestions 🎶</h1>
       </header>
       <main>
-        <form id="input-form">
-          <input
-            type="text"
-            placeholder="Please enter a Musician, band or song you like"
-            required
-            autofocus
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" value="Submit" class="submit-button" />
-        </form>
-        <div class="response" id="response"></div>
+        <div class="form-container">
+          <form id="input-form">
+            <input
+              type="text"
+              placeholder="Please enter a musician/band, genre or song you like"
+              required
+              autofocus
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" value="Submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e.: Blues, The Beatles or We Will Rock You</div>
+        </div>
+        <div class="response hidden" id="response"></div>
       </main>
       <footer>
         This project was coded by

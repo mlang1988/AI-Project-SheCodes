@@ -1,10 +1,9 @@
 function showSuggestions(response) {
-  console.log("suggestions generated");
   new Typewriter("#response", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
-    cursor: "",
+    cursor: "🎵",
   });
 }
 
@@ -19,9 +18,9 @@ function generateSuggestion(event) {
   let prompt = `User instructions: Please suggest songs or musicians similar to ${instructionInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("generating suggestions");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let suggestionElement = document.querySelector("#response");
+  suggestionElement.classList.remove("hidden");
+  suggestionElement.innerHTML = `<div class="generating">⏳ Findining new music similar to ${instructionInput.value}</div>`;
 
   axios.get(apiUrl).then(showSuggestions);
 }
