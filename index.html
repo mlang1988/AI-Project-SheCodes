@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Project</title>
   </head>
@@ -12,7 +13,7 @@
         <h1>🎶 AI Music Suggestions 🎶</h1>
       </header>
       <main>
-        <form>
+        <form id="input-form">
           <input
             type="text"
             name=""
@@ -24,7 +25,7 @@
           />
           <input type="submit" value="Submit" class="submit-button" />
         </form>
-        <div class="response">Response</div>
+        <div class="response" id="response"></div>
       </main>
       <footer>
         This project was coded by
