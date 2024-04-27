@@ -14,10 +14,11 @@ header {
 
 h1 {
   text-align: center;
-  font-weight: 800;
-  font-size: 36px;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
   line-height: 1.5;
-  color: rgb(26, 17, 1);
+  color: #735bc1;
 }
 
 .form-container {
@@ -62,6 +63,7 @@ form {
 
 .response {
   font-size: 16px;
+  font-family: "Courier New", sans-serif;
   background-color: rgb(15, 15, 15);
   color: #fff;
   padding: 20px;

@@ -14,7 +14,7 @@ function generateSuggestion(event) {
   console.log(instructionInput.value);
   let apiKey = "b0c48dt2da1edfa05b13oc7376330d93";
   let context =
-    "You are an AI who knows a lot about music and who likes to help people to find new music to listen to, always keeping in mind to follow the user instructions. Craft a list of 5 music tips in basic HTML format and give some additional information to each tip. Use bullet points, no numbers.";
+    "You are an AI who knows a lot about music and who likes to help people to find new and unusual music to listen to, always keeping in mind to follow the user instructions. Always start with the <h1> 'Music Tips for fans of instructionInput.value' Craft a list of 5 music tips in basic HTML format and give additional information and song tips to each tip. Use bullet points and no stars.";
   let prompt = `User instructions: Please suggest songs or musicians similar to ${instructionInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
