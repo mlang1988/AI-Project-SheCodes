@@ -1,11 +1,13 @@
 body {
-  background: #f0e8f3;
+  background-image: url(https://images.unsplash.com/photo-1499415479124-43c32433a620?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
-  margin: 120px auto;
-  max-width: 600px;
+  margin: 80px auto;
+  max-width: 800px;
 }
 
 header {
@@ -23,7 +25,7 @@ h1 {
 
 .form-container {
   padding: 30px;
-  background-color: #dec6eb8f;
+  background-color: #dfd6e3d9;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
   margin-bottom: 30px;
@@ -66,9 +68,10 @@ form {
   font-family: "Courier New", sans-serif;
   background-color: rgb(15, 15, 15);
   color: #fff;
-  padding: 20px;
+  padding: 20px 45px;
   line-height: 1.5;
   border-left: 5px solid #735bc1;
+  border-right: 5px solid #735bc1;
   border-radius: 10px;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
@@ -81,6 +84,7 @@ footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+  color: #fff;
 }
 
 a {
